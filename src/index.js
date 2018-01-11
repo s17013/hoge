@@ -36,7 +36,6 @@ const MoneyBook = () => {
           </tr>
 
           <tr>
-              <td>1/1</td>
               <td>{books[2].date}</td>
               <td>{books[2].item}</td>
               <td>{books[2].amount}</td>
