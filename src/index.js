@@ -12,7 +12,7 @@ const MoneyBook = () => {
   ]
   return(
      <div>
-        <h1>小遣い帳</h1>
+       <title>小遣い帳</title>
         <table className='book'>
           <thead>
           <tr>
@@ -22,10 +22,8 @@ const MoneyBook = () => {
           </tr>
          </thead>
          <tbody>
-         <MoneyBookItem book={books[0]} />
-         <MoneyBookItem book={books[1]} />
-         <MoneyBookItem book={books[2]} />
-         <MoneyBookItem book={books[3]} />
+         {books.map((book) =>
+         <MoneyBookItem book = {book} key = {book.date+book.item} /> )}
          </tbody>
         </table>
       </div>
