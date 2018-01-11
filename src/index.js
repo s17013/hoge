@@ -39,8 +39,8 @@ const MoneyBookItem = (props) => {
           <tr>
             <td>{date}</td>
             <td>{item}</td>
-            <td>{amount}</td>
-            <td></td>
+            <td>{amount >= 0 ? amount : null}</td>
+            <td>{amount < 0 ? -amount : null}</td>
           </tr>
           )
     }else{
