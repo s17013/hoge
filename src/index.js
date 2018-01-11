@@ -12,7 +12,7 @@ const MoneyBook = () => {
   ]
   return(
      <div>
-       <title>小遣い帳</title>
+      <Title>小遣い帳</Title>
         <table className='book'>
           <thead>
           <tr>
@@ -57,6 +57,14 @@ const MoneyBookItem = (props) => {
 
 MoneyBookItem.propTypes = {
   book: PropTypes.object.isRequired
+}
+
+const Title = (props) => {
+  return (<h1>{props.children}</h1>)
+}
+
+Title.propTypes = {
+  children: PropTypes.string
 }
 
 ReactDOM.render(
